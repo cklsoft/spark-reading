@@ -151,7 +151,8 @@ abstract class RDD[T: ClassTag](
     this
   }
 
-  /** Persist this RDD with the default storage level (`MEMORY_ONLY`). */
+  /**存在内存中
+   *  Persist this RDD with the default storage level (`MEMORY_ONLY`). */
   def persist(): this.type = persist(StorageLevel.MEMORY_ONLY)
 
   /** Persist this RDD with the default storage level (`MEMORY_ONLY`). */
