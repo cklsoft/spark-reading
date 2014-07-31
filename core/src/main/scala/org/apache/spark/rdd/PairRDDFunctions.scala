@@ -79,7 +79,7 @@ class PairRDDFunctions[K, V](self: RDD[(K, V)])
     */
   def myFunc()={
     println("Hello!")
-    1+3
+    1+3+4
   }
   def combineByKey[C](createCombiner: V => C,
                       mergeValue: (C, V) => C,
